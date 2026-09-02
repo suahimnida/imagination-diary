@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Imagination — 나만의 그림일기</title>
+<meta name="description" content="오늘의 일기를 쓰면 어울리는 일러스트가 함께 완성되는 다이어리, Imagination." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Imagination</a>
+  <nav>
+    <a href="diary.html">Diary</a>
+  </nav>
+</header>
+
+<main>
+  <section class="gallery-section">
+    <div class="wrap">
+      <p class="gallery-intro">오늘 쓴 일기가 그림이 되어 이곳에 걸립니다. 완성된 일러스트 중 세 장을 골라 보여드려요.</p>
+      <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+        <!-- filled by js/main.js -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

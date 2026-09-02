@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>오늘의 일기쓰기 — Imagination</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Imagination</a>
+  <nav>
+    <a href="diary.html" aria-current="page">Diary</a>
+  </nav>
+</header>
+
+<main>
+  <section class="paper-section">
+    <div class="paper-panel">
+      <h1>오늘의 일기</h1>
+      <p class="panel-sub">제목과 날짜, 오늘 있었던 일을 편하게 적어주세요.</p>
+
+      <div class="status-banner error" id="formError" role="alert">
+        <span class="dot"></span>
+        <span id="formErrorText">내용을 확인해주세요.</span>
+      </div>
+
+      <form id="writeForm" novalidate>
+        <div class="field-row">
+          <div class="field" id="titleField">
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" placeholder="예: 맑고 푸른 하늘에 떠나는 가을 여행" maxlength="60" />
+            <p class="field-error">제목을 입력해주세요.</p>
+          </div>
+          <div class="field" id="dateField" style="max-width: 190px;">
+            <label for="date">날짜</label>
+            <input type="date" id="date" name="date" />
+            <p class="field-error">날짜를 선택해주세요.</p>
+          </div>
+        </div>
+
+        <div class="field" id="contentField">
+          <label for="content">오늘의 이야기</label>
+          <textarea id="content" name="content" placeholder="오늘 하루는 어땠나요? 있었던 일, 느낀 감정을 자유롭게 적어보세요."></textarea>
+          <p class="field-error">일기 내용을 입력해주세요.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">일기 작성 완료</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/write.js"></script>
+</body>
+</html>

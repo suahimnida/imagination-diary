@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diary — Imagination</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Imagination</a>
+  <nav>
+    <a href="diary.html" aria-current="page">Diary</a>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="diary-toolbar">
+      <a class="btn btn-primary" href="write.html">오늘의 일기쓰기</a>
+    </div>
+    <p class="diary-section-title">기록된 일기</p>
+    <div class="diary-grid" id="diaryGrid" aria-live="polite">
+      <!-- filled by js/diary.js -->
+    </div>
+  </div>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/diary.js"></script>
+</body>
+</html>

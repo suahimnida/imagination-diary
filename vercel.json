@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/generate-illustration.py": {
+      "maxDuration": 30
+    }
+  }
+}

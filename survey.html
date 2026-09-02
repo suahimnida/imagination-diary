@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>일러스트 스타일 선택 — Imagination</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Imagination</a>
+  <nav>
+    <a href="diary.html" aria-current="page">Diary</a>
+  </nav>
+</header>
+
+<main>
+  <section class="paper-section">
+    <div class="paper-panel">
+      <h1>어떤 그림으로 그려볼까요?</h1>
+      <p class="panel-sub">오늘 쓴 일기에 어울리는 스타일을 1개에서 5개까지 골라주세요.</p>
+
+      <div class="diary-recap" id="diaryRecap">
+        <!-- filled with the draft from write.html -->
+      </div>
+
+      <div class="status-banner error" id="surveyError" role="alert">
+        <span class="dot"></span>
+        <span id="surveyErrorText">스타일을 확인해주세요.</span>
+      </div>
+
+      <div class="field">
+        <label>스타일 키워드</label>
+        <div class="chip-grid" id="chipGrid" role="group" aria-label="일러스트 스타일 선택"></div>
+        <p class="chip-hint">최소 1개, 최대 5개까지 선택할 수 있어요.</p>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-block" id="generateBtn">일러스트 생성하기</button>
+
+      <div class="loading-row" id="loadingRow">
+        <span class="spinner"></span>
+        <span>일기를 바탕으로 그림을 그리고 있어요…</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/survey.js"></script>
+</body>
+</html>
