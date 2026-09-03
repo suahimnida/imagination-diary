@@ -18,7 +18,7 @@
 | 배포 | GitHub + Vercel |
 
 ## 배포 URL
-`https://<vercel-project-이름>.vercel.app` — Vercel 배포 후 이 문서에 실제 주소로 교체해주세요.
+`https://<vercel-project-이름>.vercel.app` — https://imagination-diary-rtur2b23i-love2957love-5212.vercel.app/
 
 ## 프로젝트 구조
 ```
