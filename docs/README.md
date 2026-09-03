@@ -33,8 +33,7 @@ imagination-diary/
 ├─ api/
 │  └─ generate-illustration.py  # Gemini API 연동 서버리스 함수
 ├─ requirements.txt
-├─ vercel.json           # 함수 타임아웃 설정
-└─ PLAN.md               # 서비스 기획서
+└─ vercel.json           # 함수 타임아웃 설정
 ```
 
 ### :three:-:two:. 깃허브에 푸시
